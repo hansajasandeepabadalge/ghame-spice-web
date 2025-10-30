@@ -11,7 +11,7 @@ export const ContactSection = () => {
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
                 <p className="text-gray-700">
-                  No. 406/7, Hokandara North, Hokandara, Malabe, Sri Lanka
+                  365/2/B 1st Lane, Nandasara Mawatha, Hokandara North, Hokandara, Malabe. Sri Lanka.
                 </p>
               </div>
               <div className="flex items-center space-x-4">

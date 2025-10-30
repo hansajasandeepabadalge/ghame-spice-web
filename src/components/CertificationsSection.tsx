@@ -1,11 +1,20 @@
 import { Shield, Building2, Award, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import haccp from '../assets/certificates/haccp.png';
 import pv00292189 from '../assets/certificates/pv00292189.png';
 import iso22000 from '../assets/certificates/iso22000.png';
 
 export const CertificationsSection = () => {
   const [selectedCert, setSelectedCert] = useState<string | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    if (selectedCert) {
+      setTimeout(() => setIsAnimating(true), 10);
+    } else {
+      setIsAnimating(false);
+    }
+  }, [selectedCert]);
 
   const certifications = [
     {
@@ -54,11 +63,15 @@ export const CertificationsSection = () => {
         {/* Modal Popup */}
         {selectedCert && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
+            className={`fixed inset-0 bg-black z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${
+              isAnimating ? 'bg-opacity-80' : 'bg-opacity-0'
+            }`}
             onClick={() => setSelectedCert(null)}
           >
             <div 
-              className="relative max-w-4xl max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-hidden"
+              className={`relative max-w-4xl max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-hidden transition-all duration-300 transform ${
+                isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+              }`}
               onClick={(e) => e.stopPropagation()}
             >
               <button

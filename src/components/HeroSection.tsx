@@ -1,3 +1,5 @@
+import logo from '../assets/images/logo/logo.png';
+
 export const HeroSection = () => {
   const scrollToProducts = () => {
     const element = document.getElementById("products");
@@ -13,7 +15,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <img
-            src="assets/images/logo/logo.png"
+            src={logo}
             alt="Ghame Spice Logo"
             className="h-32 w-auto mx-auto mb-8"
         />

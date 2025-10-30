@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import logo from '../assets/images/logo/logo.png';
+
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [{
@@ -32,7 +34,7 @@ export const Navigation = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-3">
             <img
-                src="assets/images/logo/logo.png"
+                src={logo}
                 alt="Ghame Spice Logo"
                 className="h-10 w-auto"
             />

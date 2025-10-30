@@ -136,32 +136,7 @@ export const ProductsSection = () => {
         image: "https://i.pinimg.com/736x/c2/0c/a6/c20ca6f5d4938d4db642353257200c6b.jpg"
       },
     ],
-  },
-  {
-    category: "Fresh & Aromatic Herbs",
-    items: [
-      {
-        name: "Lemongrass",
-        image:
-          "https://cdn.shopify.com/s/files/1/0858/1205/2304/files/Get_to_Know_Lemongrass1.jpg?v=1726610567",
-      },
-      {
-        name: "Bayleaf",
-        image:
-          "https://digital-coven.com/wp-content/uploads/2021/01/screen-shot-2021-01-07-at-13.38.43.png?w=834",
-      },
-      {
-        name: "Citrus Leaves",
-        image:
-          "https://www.ruralsprout.com/wp-content/uploads/2021/09/lime-leaves-2.jpg.webp",
-      },
-      {
-        name: "Kaffir Lime",
-        image:
-          "https://quickthai.co/wp-content/uploads/2021/11/Kaffir-Lime.jpg",
-      },
-    ],
-  },
+  }
 ];
 
 
